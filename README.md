@@ -26,3 +26,10 @@
    **!IMPORTANT: Do not change the value of database url**
 
 4. Build and run the project: `docker compose up --build`
+
+5. After running the project, run the migrations:
+
+   ```bash
+   docker exec vdte-app-1 alembic revision --autogenerate -m "Initial schema"
+   docker exec vdte-app-1 alembic upgrade head
+   ```
