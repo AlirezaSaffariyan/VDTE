@@ -33,3 +33,5 @@
    docker exec vdte-app-1 alembic revision --autogenerate -m "Initial schema"
    docker exec vdte-app-1 alembic upgrade head
    ```
+
+   or you can just run `chmod 755 init_db.sh` and then `./init_db.sh`
